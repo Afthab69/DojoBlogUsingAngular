@@ -1,0 +1,13 @@
+<div id="bodyclass2">
+  <h2>All Blogs!</h2>
+  <div id = "bodyc">
+  <ul id="blog-list" *ngFor="let data of blogs">
+      <div class = "heading">
+         <a routerLink="/edit/{{ this.service.getId(data) }}" routerLinkActive="active">{{data.blogtitle}}</a>
+         <p class = "notheading">
+          Written by {{data.blogauthor}}
+         </p>
+      </div>
+  </ul>
+  </div>
+</div>

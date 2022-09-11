@@ -1,0 +1,40 @@
+#bodyclass2{
+  display: flexbox;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+.notheading{
+  color:#000;
+  font-weight: normal;
+  font-size: medium;
+}
+.heading{
+  color: #f1356d;
+  font-weight: bold;
+  font-size: larger;
+}
+a:link {
+  text-decoration: none;
+  color:#f1356d;
+}
+a:visited {
+  text-decoration: none;
+  color:#f1356d;
+}
+
+
+a:hover {
+  text-decoration: none;
+  color:#f1356d;
+}
+
+
+a:active {
+  text-decoration: none;
+  color:#f1356d;
+}
+
+.bodyclass {
+  display: none;
+}

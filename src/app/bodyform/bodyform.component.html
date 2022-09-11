@@ -1,0 +1,11 @@
+<div id = "bodyclass">
+  <form id="form" name="addform" (submit)="submit()">
+      <label for="blogtitle">Blog Title:</label><br>
+      <input id="blogtitle" name="title" [(ngModel)] ="blog.blogtitle"><br>
+      <label for="blogbody">Blog Body:</label><br>
+      <textarea name="message" rows="2" cols="20" id="blogbody" [(ngModel)]=blog.blogbody></textarea><br>
+      <label for="blogauthor">Blog Author:</label><br>
+      <input type="text" id="blogauthor" name="Author" autocomplete="on" [(ngModel)]="blog.blogauthor"><br><br>
+      <button type="submit" class="button">Add Blog</button>
+  </form>
+</div>
