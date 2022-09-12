@@ -22,7 +22,7 @@ export class ServiceService {
     blog.blogauthor = author;
   }
   delete(id: number) {
-    delete this.blogs[id];
+    this.blogs.splice(id,1);
     console.log(this.blogs)
   }
 }
