@@ -22,6 +22,9 @@ export class EditComponent implements OnInit {
     this.blog = this.service.get(this.id);
   }
 
+  backhome(){
+    this.router.navigateByUrl('/');
+  }
   delete() {
     this.service.delete(this.id);
     this.router.navigateByUrl('/');
