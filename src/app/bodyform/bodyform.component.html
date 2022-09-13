@@ -1,11 +1,11 @@
 <div id = "bodyclass">
-  <form id="form" name="addform" (submit)="submit()">
+  <form #form="ngForm" name="addform" (submit)="submit(form.value)" ngNativeValidate>
       <label for="blogtitle">Blog Title:</label><br>
-      <input id="blogtitle" name="title" [(ngModel)] ="blog.blogtitle"><br>
+      <input id="blogtitle" name="title" ngModel required/><br>
       <label for="blogbody">Blog Body:</label><br>
-      <textarea name="message" rows="2" cols="20" id="blogbody" [(ngModel)]=blog.blogbody></textarea><br>
+      <textarea name="message" rows="2" cols="20" id="blogbody" ngModel></textarea><br>
       <label for="blogauthor">Blog Author:</label><br>
-      <input type="text" id="blogauthor" name="Author" autocomplete="on" [(ngModel)]="blog.blogauthor"><br><br>
+      <input type="text" id="blogauthor" name="author" autocomplete="on" ngModel required><br><br>
       <button type="submit" class="button">Add Blog</button>
   </form>
 </div>

@@ -12,12 +12,12 @@ import { NgForm } from '@angular/forms';
 })
 export class BodyformComponent implements OnInit {
   constructor(private service: ServiceService, private router: Router) {}
-  blog: BLOG = { blogtitle: '', blogbody: '', blogauthor: '' };
+
 
   ngOnInit(): void {}
-  submit() {
-    console.log(this.blog);
-    this.service.add(this.blog);
+  submit(data:any) {
+    console.log(data);
+    this.service.add(data);
     this.router.navigateByUrl('/');
   }
 }

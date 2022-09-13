@@ -1,5 +1,5 @@
 export interface BLOG {
-  blogtitle: string;
-  blogbody: string;
-  blogauthor: string;
+  title: string;
+  message: string;
+  author: string;
 }

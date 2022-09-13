@@ -17,9 +17,9 @@ export class ServiceService {
     this.blogs.push(blog);
   }
   edit(blog: BLOG, title: string, body: string, author: string) {
-    blog.blogtitle = title;
-    blog.blogbody = body;
-    blog.blogauthor = author;
+    blog.title = title;
+    blog.message = body;
+    blog.author = author;
   }
   delete(id: number) {
     this.blogs.splice(id,1);
